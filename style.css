@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(200, 200, 200);
+    background: url(bilder/HotChocoPhoto.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    line-height: 1.25;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;   /* aldri bredere enn boksen bildet ligger i */
+    height: auto;      /* behold forholdet mellom bredde og høyde */
+    display: block;    /* fjerner et lite mellomrom under bildet */
+}
+
+.inter-uniquifier {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.limelight-regular {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+    top: auto;
+    background-color: rgba(200, 175, 150, 80%);
+    color: white;
+    font-size: 4vh;
+    font-family: "Limelight", sans-sserif;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 8vh;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 25%);
+}
+
+main {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+.bilde {
+    max-width: 65vh;
+    max-height: 65vh;
+    border-radius: 15vh;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 25%);
+}
+
+nav {
+    min-width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(180, 140, 110, 90%);
+    border-radius: 50px;
+    padding: 1rem;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 25%);
+}
+
+nav a {
+    font-family: "Inter", sans-serif;
+    font-size: 2vh;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgba(210, 170, 120, 80%);
+    padding: 1rem;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 25%);
+    transition: scale 0.2s;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    /* translate: 0 -4px; */
+    scale: 1.025;
+    color: rgb(250, 240, 220); 
+    text-decoration:none; 
+    cursor:pointer;
+}
+
+a:hover .nav_ikon {
+    scale: 1.2;
+}
+
+.nav_ikon {
+    width: 1.2em;
+    height: 1.2em;
+    flex-shrink: 0;
+    padding-right: 0.5em;
+    transition: scale 0.2s;
+}
+.kontakt_ikon {
+    width: 1.2em;
+    height: 1.2em;
+    flex-shrink: 0;
+    padding-right: 0.5em;
+}
+
+footer {
+    bottom: auto;
+    background-color: rgba(200, 175, 150, 80%);
+    color: white;
+    font-size: 2vh;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 25%);
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+}
