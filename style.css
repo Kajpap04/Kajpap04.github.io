@@ -53,8 +53,19 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10vh;
-    padding-right: 10vh;
+    gap: 2rem;
+    padding: 2rem clamp(1rem, 4vw, 4rem);
+}
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav {
+        width: min(100%, 24rem);
+    }
 }
 
 .bilde {
@@ -69,19 +80,18 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: rgba(180, 140, 110, 90%);
-    border-radius: 50px;
+    border-radius: 2.5rem;
     padding: 1rem;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 25%);
+    gap: 1rem;
 }
 
 nav a {
     font-family: "Inter", sans-serif;
-    font-size: 2vh;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    font-size: 1rem;
     background-color: rgba(210, 170, 120, 80%);
     padding: 1rem;
-    border-radius: 50px;
+    border-radius: 2.5rem;
     color: white;
     display: flex;
     align-items: center;
