@@ -98,7 +98,7 @@ a:hover .nav_ikon {
     width: 2em;
     height: 2em;
     flex-shrink: 0;
-    padding-left: 0.5em;
+    padding-right: 0.5em;
     transition: scale 0.2s;
 }
 .kontakt_ikon {
@@ -122,4 +122,22 @@ footer {
 footer p {
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bilde {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        width: 100%;
+        max-width: 20rem;
+        box-sizing: border-box;
+    }
 }
