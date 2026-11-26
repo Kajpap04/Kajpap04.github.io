@@ -1,3 +1,16 @@
+.inter-uniquifier {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.limelight-regular {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
     background-color: rgb(200, 200, 200);
     background: url(bilder/HotChocoPhoto.jpg);
@@ -12,28 +25,15 @@ body {
     flex-direction: column;
 }
 
-.inter-uniquifier {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.limelight-regular {
-  font-family: "Limelight", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 header {
     top: auto;
     background-color: rgba(200, 175, 150, 80%);
     color: white;
     font-size: 2rem;
     font-family: "Limelight", sans-sserif;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-    padding-left: 6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 5rem;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 25%);
 }
 
@@ -47,18 +47,18 @@ main {
 }
 
 .bilde {
-    max-width: 32rem;
-    max-height: 32rem;
-    border-radius: 6rem;
+    max-width: 40%;
+    border-radius: 6em;
     box-shadow: 0 0 40px 10px rgba(0, 0, 0, 25%);
 }
 
 nav {
-    width: 20rem;
+    min-width: 25%;
+    max-width: 25%;
     display: flex;
     flex-direction: column;
     background-color: rgba(180, 140, 110, 90%);
-    border-radius: 2.5rem;
+    border-radius: 2.5em;
     padding: 1rem;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 25%);
     gap: 1rem;
@@ -69,7 +69,7 @@ nav a {
     font-size: 1rem;
     background-color: rgba(210, 170, 120, 80%);
     padding: 1rem;
-    border-radius: 2.5rem;
+    border-radius: 2.5em;
     color: white;
     display: flex;
     align-items: center;
@@ -101,6 +101,7 @@ a:hover .nav_ikon {
     padding-right: 0.5em;
     transition: scale 0.2s;
 }
+
 .kontakt_ikon {
     width: 1.2em;
     height: 1.2em;
@@ -124,7 +125,7 @@ footer p {
     align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     main {
         flex-direction: column;
         justify-content: center;
@@ -132,7 +133,7 @@ footer p {
 
     .bilde {
         width: 100%;
-        height: auto;
+        height: 100%
     }
 
     nav {
